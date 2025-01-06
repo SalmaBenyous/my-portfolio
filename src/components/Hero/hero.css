@@ -1,0 +1,86 @@
+section.hero .left-section
+{
+    flex-grow: 1;
+}
+section.hero
+{
+    margin-top: 3rem;
+}
+section.hero .avatar
+{
+    width: 90px;
+    border: 1px solid #fff;
+    padding: 1px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.589) ;
+}
+section.hero .icon-verified
+{
+    color: var(--blue);
+    font-size: 1.1rem;
+}
+section.hero .icons
+{
+    
+    gap: 0.8rem;
+    margin-top: 1rem;
+    
+}
+
+section.hero .icons a
+{
+    font-size: 1.3rem;
+    color: var(--subtitle);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+section.hero .icons a:hover
+{
+    color: var(--blue);
+    font-size: 1.4rem;
+}
+section.hero h3.title
+{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: var(--title);
+}
+section.hero p.sub-title
+{
+    color:var(--subtitle);
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+}
+section.hero h3.title .key
+{
+    color: var(--blue);
+}
+.animationLaptop
+{
+  margin-left: 0.3rem;
+  margin-right: -5rem;
+  width: 430px;
+  margin-top: 1.3rem;
+}
+
+@media (max-width:1024px)
+{
+    h3 {
+        font-size: 1rem;
+    }
+    /* section.hero
+    {
+        flex-direction: column;
+        gap: 3rem;
+    } */
+     .animationLaptop
+     {
+        width: 290px;
+     }
+    section.hero .title
+    {
+        font-size: 1.8rem;
+    }
+}
+

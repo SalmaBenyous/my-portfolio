@@ -1,0 +1,150 @@
+main.flex
+{
+    gap:1.1rem;
+    align-items: start;
+}
+/*left section*/
+main div.left
+{
+    flex-direction: column;
+    gap: 10px;
+}
+main div.left button
+{
+    background-color:rgba(36, 37, 46, 1);
+    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+main div.left button.active
+{
+    opacity: 1;
+    border: 1.5px solid var(--blue);
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+}
+.light main div.left button.active
+{
+    border: 1.5px solid #000;
+}
+.light .card
+{
+    border: none;
+}
+.light .card:hover
+{
+    border: none;
+}
+/* main div.left button:hover
+{
+    opacity: 1;
+
+} */
+
+/*rigth section*/
+main div.rigth
+{
+ /* flex-grow: 1; */
+ flex-wrap: wrap;
+ gap: 11px;
+ justify-content: center;
+ /* align-items: center; */
+
+}
+/* .grow
+{
+ flex-grow: 1;
+
+} */
+.icons-main
+{
+    justify-content: space-between;
+}
+main div.rigth div.box div.flex
+{
+    gap: 2rem;
+}
+.card .box
+{
+    padding: 1rem 0.4rem;
+}
+.card .box .title
+{
+    color: var(--title);
+}
+.card .box .sub-title
+{
+    color: var(--subtitle);
+    font-size:0.8rem;
+    margin-top:0.7rem ;
+    margin-bottom: 1.1rem;
+ 
+}
+.card .icon-github, .icon-link
+{
+    font-size: 1.2rem;
+    color: var(--subtitle);
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+.card .icon-github:hover, .icon-link:hover
+{
+    color: var(--blue);
+    font-size: 1.25rem;
+}
+.card .link{
+    font-size: 0.9rem;
+    color: var(--blue);
+    margin-right: 12px;
+}
+.card
+{
+    box-shadow:-1px 1px 1px rgba(0, 0,0, 0.16), 1px 1px 1px rgba(0, 0,0, 0.15) ;
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    transition: all 0.2s;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05));
+}
+.card:hover
+{
+    background-color: rgb(246, 246,246);
+    border: 1px solid var(--blue);
+    cursor: pointer;
+    rotate: 1deg;
+    scale: 1.01;
+
+}
+.card img{
+    border-radius: 5px 5px 0 0;
+}
+/*responsive desing*/
+@media (max-width:1124px)
+{
+    main.flex
+    {
+        flex-direction: column;
+    }
+    main div.left
+    {
+       margin-left: auto;
+       margin-right: auto;
+       
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main div.left button
+    {
+        width: 7rem;
+        padding: 0.8rem 0;
+        font-size: 0.9rem;
+    }
+}
